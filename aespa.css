@@ -1,0 +1,487 @@
+@font-face {
+    font-family: "Century Gothic";
+    src : url(Fonts/GOTHIC.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bookman Old Style";
+    src: url(Fonts/BOOKOS.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic";
+    color: #777;
+}
+
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    align-items: center;
+}
+
+/*bagian atas*/
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.main-header {
+    height: 350px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.192);
+    background-image: url("img/bg.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+.name {
+    text-align: center;
+    align-items: stretch;
+    margin: 2%;
+    font-size: 4em;
+    font-family: "Bookman Old Self";
+    font-weight: normal;
+    color: whitesmoke;
+}
+
+.name-large {
+    font-size: 8em;
+}
+
+/* container dsb*/
+
+.content-section {
+    margin: 1em;
+    text-align: center;
+    align-items: center;
+}
+
+.container-fluid {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.container-performance {
+    max-width: 1080px;
+    margin :40px;
+    padding: 100px;
+    background-color: rgba(17, 20, 32, 0.596);
+}
+
+.container-about {
+    display: block;
+    max-width: 1080px;
+    margin :30px;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: rgba(17, 20, 32, 0.596);
+}
+
+.section-header {
+    font-family: "Bookman Old Self";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+
+/* halaman home*/
+
+.aespa{
+    text-align: center;
+    text-decoration: none;
+}
+
+.aespa p{
+    margin-top: 0.8em;
+    font-size: large;
+}
+
+.aespa-desc {
+    text-decoration: none;
+}
+
+.aespa img{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    height: 250px;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+.aespa a:hover img{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.performance {
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+.performance-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.performance-row:last-child {
+    border: none;
+}
+
+.performance-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.performance-date {
+    color: rgb(32, 37, 43);
+    width: 11%;
+    font-weight: bold;
+}
+
+.performance-city {
+    color: rgb(230, 252, 255);
+    width: 24%;
+    margin: auto;
+    text-align: center;
+}
+
+.performance-arena {
+    color: rgb(230, 252, 255);
+    width: 42%;
+    margin: auto;
+    text-align: center;
+}
+
+.performance-btn {
+    max-width: 19%;
+}
+
+.performence-item-image{
+    height: 75px;
+    width: 75px;
+    align-items: center;
+    display: inline-block;
+}
+
+/* halaman store*/
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+    width: 250px;
+    align-items: center;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 30%;
+    padding-left: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    padding-left: 5%;
+    color: #333;
+    align-items: center;
+    text-align: center;
+}
+
+.cart-quantity {
+    width: 35%;
+    padding-left: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+/* halaman about*/
+
+.about-img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.about-imgs {
+    display: inline-block;
+    height: 70%;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.about-imgs-member {
+    display: inline-block;
+    height: 50%;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.about-desc{
+    margin: auto;
+    text-indent: 20px;
+    text-align: justify;
+    size: .5em;
+    color: cornsilk;
+}
+
+/* halaman kelompok*/
+
+.groups{
+    text-align: center;
+    align-items: center;
+    font-size: larger;
+    color: black;
+}
+
+.group-img{
+    width: 30%;
+    height: 30%;
+    align-items: center;
+    border: 3px outset rgba(255, 255, 255, 0.548);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+/* footer */
+
+.main-footer {
+    background-image: linear-gradient(to right, #58126a, #f6b2e1);
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+/* sagala tombol*/
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-primary a{
+    text-decoration: none;
+    color: rgba(25, 26, 48, 0.918);
+}
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
